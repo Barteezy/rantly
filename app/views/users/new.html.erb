@@ -1,0 +1,32 @@
+<div class="background">
+  <div class="form-container">
+    <h1>Register</h1>
+    <%= form_for @user do |f| %>
+    <%= f.label :username %>
+        <%= f.text_field :username %>
+
+        <%= f.label :password %>
+        <%= f.text_field :password %>
+
+        <%= f.label :first_name%>
+        <%= f.text_field :first_name %>
+
+        <%= f.label :last_name %>
+        <%= f.text_field :last_name %>
+
+        <%= f.label :bio %>
+        <%= f.text_area :bio %>
+
+
+
+            <%= f.radio_button :frequency, false, :checked => 'Daily' %>
+            <%= f.label :frequency, 'Daily', :value => 'Daily' %>
+            <%= f.radio_button :frequency, false, :checked => 'Weekly' %>
+            <%= f.label :frequency, 'Weekly', :value => 'Weekly' %>
+            <%= f.radio_button :frequency, false, :checked => 'Monthly' %>
+            <%= f.label :frequency, 'Monthly', :value => 'Monthly' %>
+
+        <%= f.submit "Register" %>
+        <% end %>
+  </div>
+</div>
