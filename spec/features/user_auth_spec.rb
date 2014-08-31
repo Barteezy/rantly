@@ -15,7 +15,7 @@ feature 'user can got to the register page and register' do
 
     fill_in "Bio", :with => "I'm spicy"
 
-    choose('Daily')
+    choose('user[frequency]')
 
     click_on "Register"
 

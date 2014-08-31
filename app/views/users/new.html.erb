@@ -34,11 +34,11 @@
 
         <p>How often do you rant?</p>
 
-        <%= f.radio_button :frequency, false, :checked => 'Daily' %>
+        <%= f.radio_button :frequency, 'Daily', :checked => 'Daily' %>
         <%= f.label :frequency, 'Daily', :value => 'Daily' %>
-        <%= f.radio_button :frequency, false, :checked => 'Weekly' %>
+        <%= f.radio_button :frequency, 'Weekly', :checked => 'Weekly' %>
         <%= f.label :frequency, 'Weekly', :value => 'Weekly' %>
-        <%= f.radio_button :frequency, false, :checked => 'Monthly' %>
+        <%= f.radio_button :frequency, 'Monthly', :checked => 'Monthly' %>
         <%= f.label :frequency, 'Monthly', :value => 'Monthly' %>
         <br>
         <hr>

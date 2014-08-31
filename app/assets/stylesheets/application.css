@@ -49,3 +49,11 @@
     width: 50%;
 
 }
+
+.flash-success {
+    margin: auto;
+    width: 33%;
+    border: 1px;
+    background-color: lightgreen;
+    text-align: center;
+}
