@@ -6,8 +6,15 @@
     <li>
       <%= link_to "Join", new_user_path, class: 'button' %>
     </li>
+    <% if current_user %>
     <li>
-      <%= link_to "Login", "/" %>
+      <%= link_to "Logout", logout_path, notice: 'You are now logged out' %>
     </li>
+     <% else %>
+    <li>
+      <%= link_to "Login", new_session_path %>
+    </li>
+     <% end %>
+
   </ul>
 </nav>

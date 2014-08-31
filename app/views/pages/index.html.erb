@@ -1,13 +1,17 @@
 <div id="container">
   <div id="top_div">
-  <h1 class="header">Rantly</h1>
+    <% if current_user %>
+    <h2>Welcome <%= link_to "#{current_user.first_name} #{current_user.last_name}", edit_user_path(current_user)  %> </h2>
+    <% end %>
+    <h1 class="header">Rantly</h1>
+
     <p class="let">Let it all out</p>
-</div>
+  </div>
 
-<div id="bottom_div">
+  <div id="bottom_div">
 
-  <h1 class="quote">"Super Awesome Quote"</h1>
+    <h1 class="quote">"Super Awesome Quote"</h1>
 
-</div>
+  </div>
 
 </div>

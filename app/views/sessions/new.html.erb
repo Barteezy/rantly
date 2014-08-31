@@ -1,0 +1,24 @@
+<html class="registration-background">
+<div class="page-wrap">
+  <h1>Login</h1>
+
+  <div class="grid">
+
+    <%= form_for @user, url: sessions_path do |f| %>
+        <div class="col col-2">
+          <%= f.label :username %>
+
+          <%= f.text_field :username %>
+          <br>
+          <%= f.label :password %>
+
+          <%= f.password_field :password %>
+          <br>
+          <hr>
+          <%= f.submit "LOGIN", class: "form-button" %>
+
+        </div>
+        <% end %>
+  </div>
+</div>
+</html>

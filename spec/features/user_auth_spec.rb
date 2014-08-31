@@ -15,9 +15,20 @@ feature 'user can got to the register page and register' do
 
     fill_in "Bio", :with => "I'm spicy"
 
-    choose('user[frequency]')
-
     click_on "Register"
+
+    click_on "Login"
+
+    fill_in "Username", :with => "taquito"
+    fill_in "Password", :with => "tacos"
+
+    click_on "LOGIN"
+
+    expect(page).to have_content "Welcome taco"
+
+    click_on "taco grande"
+
+    fill_in "Username", :with => "taq"
 
 
 
