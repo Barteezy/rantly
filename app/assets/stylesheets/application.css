@@ -13,3 +13,39 @@
  *= require_tree .
  *= require_self
  */
+
+.form-button {
+    width: 98%;
+    background-color: green;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+
+}
+
+
+.page-wrap {
+    padding: 30px;
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    background-color: white;
+
+
+}
+
+.registration-background {
+    background-color: grey;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.col-2-3 {
+    float: left;
+    width: 50%
+}
+.col-1-3 {
+    float: right;
+    width: 50%;
+
+}
